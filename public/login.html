@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login Page</title>
+        <link rel='stylesheet' rel="stylesheet"  href='css/Loginmain.css'>
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<div class="Wrapper">
+			<form class="form" action="/checkLogin" method="post" accept-charset="utf-8">
+				<h1>Login</h1>
+				<div class="Input-TextBox">
+					<input type="text" name="username" value="" placeholder="Username" required><br><i class='bx bxs-user'></i>
+				</div>
+				<div class="Input-TextBox">
+					<input type="password" name="password" value="" placeholder="Password" required><br><i class='bx bxs-lock' ></i>
+				</div>
+				<div class="Register-LinkPage">
+					<p>Don't Have An Account ? <a href="/register.html">Register</a> </p>
+				</div>
+					<span id="errordisplay"></span><br>
+					<button type="submit" class="btn">Login</button>
+			</form>
+		</div>
+		<h3 class="BottomRightText">Picture By @pikisuperstar</h3>
+	</body>
+</html>

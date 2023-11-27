@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#errordisplay{
+    font-size:12px;
+	color: #EE0019;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #42262f;
+    background-image: url("../img/pixel-art-vacation-background_52683-86708.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Wrapper{
+    width: 420px;
+    background-color: transparents;
+    border: 2px solid rgb(255, 255, 255,.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.849);
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.Wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.Wrapper .Input-TextBox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin:  30px 0;
+}
+.Input-TextBox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px; /*Padding Top,Right,Bottom,Left*/
+    color: aliceblue;
+}
+.Input-TextBox input::placeholder{
+    color: aliceblue;
+}
+.Input-TextBox i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: translateY(-20%);
+    font-size: 20px;
+    
+}
+.Wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+.Wrapper .Register-LinkPage{
+    font-size: 15px;
+    text-align: right;
+    margin-bottom:20px;
+    margin-right: 10px;
+}
+.Register-LinkPage p a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+.Register-LinkPage p a:hover{
+    text-decoration: underline;
+}
+.BottomRightText {
+    position: fixed;
+    bottom: 20px;
+    right: 35px;
+    color: aliceblue;
+}

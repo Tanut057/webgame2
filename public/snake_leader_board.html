@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link type="text/css" rel="stylesheet" href="css/stylefeed.css">
+    <script type="text/javascript" src="js/Index.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+    <div id="RegisterAndLoginButton">
+        <script>readPost("snakegamecomment_1")</script>
+        <script>readPost("snakegamecomment_2")</script>
+        <script>readPost("snakegamecomment_3")</script>
+        <script>readLeaderboardName("snakegameleaderboard")</script>
+    </div>
+
+    
+
+        <div class="item1">
+
+            <div id="browsePic">
+                <div id="displayPic">
+                    <img src="img/avatar.png" alt="">
+                </div>
+                <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data">
+                    <input type="file" id="fileField" name="avatar" value="fileToUpload" placeholder="" hidden>
+                </form>
+            </div>
+
+            Hello <span id="username"></span> LEADER BOARD
+            <div><a href="/logout" id="LogoutButton">Logout</a>
+                <button onclick="goBack()">Go Back</button>
+               <script>
+                    function goBack() {
+                        window.history.back();
+                    }
+                </script>
+                 </div>
+        </div>
+    
+    <div class="item2">
+
+    </div>
+    <div class="item3">
+    <div id="leader_Board_1">
+        <!-- <div id="browsePic">
+            <div id="displayPic">
+                <img src="img/avatar.png" alt="">
+            </div>
+        </div> -->
+        <div id="snakegameleaderboard_1">
+            <h1>Number 1</h1>
+        </div><span><button id="snakegamecomment_1" onClick="useLikeButton('snakegameleaderboard', 0)">Like</button></span>
+        <textarea name="msg" id="textmsg_1" value="" placeholder="" rows="4" cols="50"></textarea>
+        <br>
+        <button id="snakegamecomment_1" onClick="getData(this.id, 'textmsg_1')">Post</button>
+    </div>
+    <hr>
+    <div id="snakegamecomment_1_feed-container">
+
+    </div>
+    <hr>
+    <div id="leader_Board_2">
+        <div id="snakegameleaderboard_2">
+            <h1>Number 2</h1>
+        </div><span><button id="snakegamecomment_2" onClick="useLikeButton('snakegameleaderboard', 1)">Like</button></span>
+        <textarea name="msg" id="textmsg_2" value="" placeholder="" rows="4" cols="50"></textarea>
+        <br>
+        <button id="snakegamecomment_2" onClick="getData(this.id, 'textmsg_2')">Post</button>
+    </div>
+    <hr>
+    <div id="snakegamecomment_2_feed-container">
+
+    </div>
+    <hr>
+    <div id="leader_Board_3">
+        <div id="snakegameleaderboard_3">
+            <h1>Number 3</h1>
+        </div><span><button id="snakegamecomment_3" onClick="useLikeButton('snakegameleaderboard', 2)">Like</button></span>
+        <textarea name="msg" id="textmsg_3" value="" placeholder="" rows="4" cols="50"></textarea>
+        <br>
+        <button id="snakegamecomment_3" onClick="getData(this.id, 'textmsg_3')">Post</button>
+    </div>
+    <hr>
+    <div id="snakegamecomment_3_feed-container">
+
+    </div>
+    <hr>
+</div>
+<div class="item4">
+        
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #25121b;
+  background-image: url("../img/Artboard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+header {
+background-color: #100E1B;
+color: #fff;
+display: flex;
+align-items: center;
+padding: 10px 20px;
+justify-content: space-between; /*  */
+}
+#displayPic img{
+width: 80px; 
+height: 80px; 
+border-radius: 40px;
+box-shadow: 0 0 10px#fff;
+}
+#displayPic img:hover{
+cursor: pointer;
+}
+header span{  
+padding-right: 200px;
+font-size: 18px;
+}
+nav ul {
+list-style: none;
+padding: 0;
+display: flex;
+
+}
+
+nav ul li {
+position: relative;
+margin-right: 20px;
+font-size: 20px;
+
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+padding: 25px;
+display: block;
+}
+
+nav ul li:hover > ul.dropdown {
+display: block;
+}
+
+ul.dropdown {
+display: none;
+position: absolute;
+background-color: #100E1B;
+padding: 0;
+width: 200px;
+white-space: nowrap;
+}
+
+ul.dropdown li {
+margin: 0;
+}
+
+ul.dropdown li a {
+padding: 15px;
+padding-left: 30px;
+display: block;
+font-size: 18px;
+}
+ul.dropdown li a:hover {
+background-color: #181527;
+width: 200px;
+
+}
+nav ul li:nth-child(1) {
+margin-right: 500px; 
+}
+
+nav ul li:nth-child(2) {
+margin-right: 500px;
+}
+.ContrainerGame{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #554777;
+margin: 0 455px;
+padding-bottom: 30px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.GameMenu h1{
+color: aliceblue;
+text-align: center;
+padding-top: 20px;
+}
+.PostPic{
+padding-top: 30px;
+width: 400px;
+height: 400px;
+}
+
+.GameMenu a{
+color: aliceblue;
+display: flex;
+justify-content: center;
+text-decoration: none;
+}
+.GameMenu a:hover{
+color: blueviolet;
+}
+
+/*Display off Scrollbar*/
+::-webkit-scrollbar{
+display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+header span {
+padding-left: 10px; /* Adjust padding for smaller screens */
+}
+
+nav ul li:nth-child(1),
+nav ul li:nth-child(2) {
+margin-right: 150px; /* Adjust margins for smaller screens */
+white-space: nowrap;
+}
+
+.ContrainerGame {
+margin: 0 50px; /* Adjust margin for smaller screens */
+padding-bottom: 10px; /* Adjust padding for smaller screens */
+margin: 0 300px;
+}
+
+.PostPic {
+width: 90%; /* Adjust image width for smaller screens */
+max-width: 300px; /* Set a maximum width for the image */
+
+}
+
+.GameMenu {
+padding: 20px; /* Adjust padding for smaller screens */
+}
+}

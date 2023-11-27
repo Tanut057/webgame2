@@ -1,0 +1,25 @@
+/* adjust box field login/register */
+#container{
+	padding-top: 100px;
+	margin: auto;
+	width: 200px;
+}
+/* font Login(field) + register(field) */
+.form{
+	
+	font-size:18px;
+}
+/* login/register button */
+.form input{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size:18px;
+}
+/* error text'Username or pass' */
+#errordisplay{
+
+	font-size:12px;
+	color: #EE0019;
+}
+
+

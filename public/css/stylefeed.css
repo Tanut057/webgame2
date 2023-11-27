@@ -1,0 +1,179 @@
+.item1 { grid-area: header;}
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+/* adjust grid */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'menu main main right';
+	
+  grid-gap: 0px;
+  background-color: #132512;
+  padding: 0px;
+}
+.grid-container .item1{
+	background-color: #24171A;
+	color: #fff;
+  }
+  .grid-container .item1 > span{
+	
+	color: #ffffff;
+  }
+  .grid-container .item3{
+	background-color: #3B2222;
+  }
+  .grid-container .item3>h1{
+	color: #fff;
+  }
+.grid-container .item3>a{
+	color: #fff;
+  }
+.grid-container .item4{
+	background-color: #1D0B11;
+  }
+  .grid-container .item2{
+	background-color: #1D0B11;
+  }
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  
+}
+
+/* <div class="item2"> <a href="/logout"> Logout</a> </div> */
+#posting{
+	text-align: right;
+	padding-right: 3%;
+	width:50%;
+	
+}
+
+textarea{
+	width: 90%;
+	min-width: 200px;
+	height: 100px;
+	margin-right: 0px;
+	text-align: left;
+	font-size: 20px;
+}
+
+#postbutton{
+	width:20%;
+	min-width: 100px;
+	font-size: 20px;
+}
+
+hr {
+   /* display: block;*/
+    height: 1px;
+    border: 0;
+    border-top: 10px solid rgb(12, 1, 4);
+	border-radius: 10px;
+    margin: 15px 10px;
+    padding: 0; 
+} 
+
+.newsfeed{
+	display: flex;
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+.postmsg{
+	border-radius: 20px;
+	width: 50%;
+	background-color: #FEBE9A;
+	margin-left: 15px;
+
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	min-width: 200px;
+}
+
+.postuser {
+	height: 100px;
+	width:50%;
+	text-align: center;
+	line-height: 100px;
+	min-width: 200px;
+}
+
+.picicon {
+	display: inline-block;
+	height: 50px;
+	width:50px;
+}
+/*adjust profile pic*/
+#browsePic{
+	display: inline-block;
+	margin-right: 90%;
+}
+/*adjust profile name*/
+#username{
+	display: inline-block;
+	margin-right: 90%;
+}
+#displayPic{
+	/*display: inline-block;*/
+	width:120px;
+	height: 100px;
+	border: 2px solid black;
+
+	/*background-color: #94A5AC;*/
+}
+
+img{
+	width:100%;
+	height: 100%;
+}
+
+.hidden{
+	display: none;
+}
+
+@media only screen and (max-width: 767px){
+	.grid-container {
+		grid-template-areas:
+		  'header'
+		  'menu' 'main';
+	}
+}
+.boxBox:hover{
+    box-shadow: 0 50px 0px rgba(0,0,0,.1);
+}
+
+.boxBox .contentWK{
+    margin-left: 0%;
+    position: absolute;
+   
+    background: #fff;
+    transform: translateZ(20px) scaleY(0);
+    transform-origin: top;
+    
+    transition: 0.5s;
+    transform-style: preserve-3d ;
+}
+.boxBox:hover .contentWK{
+    transform: translateZ(20px) scaleY(1);
+}
+.pic4 {
+	width: 5%;
+	height: 5%;
+	object-fit: cover;
+	margin-right: 90%; /* เพิ่มการระบุระยะห่างซ้ายเพื่อให้มีระยะห่างน้อยลง */
+	
+  }
+.Apic{
+	width: 40%;
+	height: 25%;
+	object-fit: cover;
+
+}
+  
